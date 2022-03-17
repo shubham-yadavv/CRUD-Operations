@@ -30,7 +30,7 @@ router.post('/', async(req, res) => {
         const savedProgrammer = await programmer.save();
         res.json(savedProgrammer);
     }
-    catch(err){
+    catch(err){ 
         res.send('Error' + err)
     }
 });
